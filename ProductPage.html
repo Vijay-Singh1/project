@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./ProductPage.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+
+    <div id="navbar-container">
+      <div id="logo-container">
+        <img src="./images/logo.58169365.png" alt="" id="logo-img" />
+        <h2 id="logo-text">Kafene</h2>
+      </div>
+
+      <div class="navigation-container">
+        <a href="./ordersPage.html">Orders</a>
+        <a id="ready" href="./ProductPage.html" >Product</a>
+        <a href="./users.html">Users</a>
+      </div>
+
+      <button id="logout-link" onclick="logout()">Logout</button>
+    </div>
+    <!-- navbar ends -->
+
+    <!-- main body start -->
+
+    <h1 id="order-text">Orders</h1>
+    <table id="filter-Product-table">
+      <tr>
+        <th>Filters</th>
+      </tr>
+      <tr>
+        <td id="count">count:100</td>
+      </tr>
+      <tr>
+        <td class="filter-item">
+          <input
+            class="input-cl"
+            id="Check-box1"
+            type="checkbox"
+            value="Expired"
+            onchange="func(this)"
+            checked="true"
+          />
+          <label for="Check-box1">Expired</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="filter-item">
+          <input
+            class="input-cl"
+            id="Check-box2"
+            type="checkbox"
+            value="Low Stock"
+            onchange="func(this)"
+            checked="true"
+          />
+          <label for="Check-box2">Low Stock</label>
+        </td>
+      </tr>
+    </table>
+
+    <div id="main-container">
+      <table id="product-table">
+        <tr>
+          <th>ID</th>
+          <th>Product Name</th>
+          <th>Product Brand</th>
+          <th>Expiry Date</th>
+          <th>Unit Price</th>
+          <th>Stock</th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- main body ends -->
+
+    <script src="./ProductPage.js"></script>
+  </body>
+</html>

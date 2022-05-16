@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Page</title>
+    <link rel="stylesheet" href="./users.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+
+    <div id="navbar-container">
+      <div id="logo-container">
+        <img src="./images/logo.58169365.png" alt="" id="logo-img" />
+        <h2 id="logo-text">Kafene</h2>
+      </div>
+
+      <div class="navigation-container">
+        <a href="./ordersPage.html">Orders</a>
+        <a href="./ProductPage.html">Product</a>
+        <a id="ready" href="./users.html">Users</a>
+      </div>
+
+      <button id="logout-link" onclick="logout()">Logout</button>
+    </div>
+    <!-- navbar ends -->
+
+    <!-- main body start -->
+
+    <h1 id="order-text">Users</h1>
+
+    <div id="main-container">
+      <div>
+        <input
+          type="text"
+          placeholder="Search by Name"
+          name="search-box"
+          id="search-box"
+        />
+        <button id="reset">Reset</button>
+      </div>
+
+      <table id="data-table">
+        <tr>
+          <th>ID</th>
+          <th>User Avatar</th>
+          <th>Full Name</th>
+          <th>DoB</th>
+          <th>Gender</th>
+          <th>Current Location</th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- main body ends -->
+
+    <script src="./users.js"></script>
+  </body>
+</html>
